@@ -1,0 +1,48 @@
+{
+    "name": "devlabs/chileanrut",
+    "description": "A Chilean Rut script to handle ruts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandro Isla",
+            "email": "aisla@devlabs.cl",
+            "homepage": "https://github.com/willywes",
+            "role": "Developer"
+        },
+        {
+            "name": "Victor Araya",
+            "email": "varaya@devlabs.cl",
+            "homepage": "https://www.linkedin.com/in/victor-araya-0399a975/",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/devlabs/chilean-rut-php",
+    "keywords": ["Laravel", "ChileanRut", "Rut", "Rut Chileno", "Validar Rut", "Formatear Rut", "Calcular Rut"],
+    "require": {
+        "illuminate/support": "~5|~6|~7|~8|~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devlabs\\ChileanRut\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Devlabs\\ChileanRut\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devlabs\\ChileanRut\\ChileanRutServiceProvider"
+            ],
+            "aliases": {
+                "ChileanRut": "Devlabs\\ChileanRut\\Facades\\ChileanRut"
+            }
+        }
+    }
+}
